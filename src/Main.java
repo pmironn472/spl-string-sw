@@ -29,16 +29,21 @@ public class Main {
 
         //FIRST METHOD OF SWAPING
         String temp = devs.get(0);
-        devs.set(0,devs.get(4));
-        devs.set(4,temp);
+        devs.set(0, devs.get(4));
+        devs.set(4, temp);
         System.out.println(devs);
-
+        
         System.out.println();
 
 
         //SECOND METHOD OF SWAPING
-        Collections.swap(devs,0,4);
+        Collections.swap(devs, 0, 4);
 
+        System.out.println(devs);
+
+        //THIRD METHOD OF SWAPING
+        System.out.println();
+        devs.set(0, devs.set(4, devs.get(0)));
         System.out.println(devs);
     }
 
